@@ -33,7 +33,7 @@
         "price": 200
     },
     {
-        "name": "Cuaderno De sangre y cenizas - Inspirada en la saga de Jennifer L. Armentrout",
+        "name": "Cuaderno De sangre y cenizas",
         "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/nophoto/book/111x148._SX50_.png",
         "url": "https://www.goodreads.com/book/show/123071047-cuaderno-de-sangre-y-cenizas---libreta-from-blood-and-ash---inspirada-en?from_search=true&from_srp=true&qid=dfPtoEHzYD&rank=5",
         "author": "Nash Yolanda",
@@ -49,7 +49,7 @@
         "price": 900
     },
     {
-        "name": "Notebook Journal Lined: Miss Willa Colyns Book Club in Blank lined Notebook",
+        "name": "Notebook Journal Lined: Miss Willa Colyns",
         "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/nophoto/book/111x148._SX50_.png",
         "url": "https://www.goodreads.com/book/show/92109346-notebook-journal-lined?from_search=true&from_srp=true&qid=dfPtoEHzYD&rank=7",
         "author": "KEVIN CHERRY",
@@ -66,7 +66,7 @@
         "price": 1200
     },
     {
-        "name": "Miss Willa Colyns Book Club | From Blood and Ash 130 Pages 8.5''x11'' in Wid eRuled Notebook",
+        "name": "Miss Willa Colyns Book Club ",
         "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/nophoto/book/111x148._SX50_.png",
         "url": "https://www.goodreads.com/book/show/107424054-miss-willa-colyns-book-club-from-blood-and-ash-130-pages-8-5-x11-in?from_search=true&from_srp=true&qid=dfPtoEHzYD&rank=9",
         "author": "William Hess",
@@ -82,7 +82,7 @@
         "price": 2300
     },
     {
-        "name": "A NOTEBOK : From Blood and Ash: Get your favourite book as a notebook",
+        "name": "From Blood and Ash: Get your favourite book as a notebook",
         "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/nophoto/book/111x148._SX50_.png",
         "url": "https://www.goodreads.com/book/show/113591691-a-notebok?from_search=true&from_srp=true&qid=dfPtoEHzYD&rank=11",
         "author": "Raxytere Company",
@@ -107,6 +107,7 @@
     },
     {
         "name": "From the Ashes",
+        "featured": true,
         "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1615181319i/57342001._SY75_.jpg",
         "url": "https://www.goodreads.com/book/show/57342001-from-the-ashes?from_search=true&from_srp=true&qid=dfPtoEHzYD&rank=14",
         "author": "Kristina Gruell",
