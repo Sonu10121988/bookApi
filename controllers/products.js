@@ -4,6 +4,9 @@ const getAllProducts = async (req, res) => {
   const { author, name, featured, sort, select } = req.query;
   const queryObj = {};
 
+  // if (id) {
+  //   queryObj.id = id;
+  // }
   if (author) {
     queryObj.author = author;
   }
