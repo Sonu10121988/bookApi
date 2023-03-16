@@ -4,6 +4,7 @@ var cors = require('cors');
 const app = express();
 const connetDB = require('./db/connect');
 
+app.use(express.json());
 app.use(cors());
 
 const PORT = process.env.PORT || 5000;
@@ -15,6 +16,26 @@ app.get('/', (req, res) => {
 
 // middleware and set router
 app.use("/api/products", products_routes);
+
+// for single id
+//app.use("/api/products/:id", products_routes);
+
+ // for single id
+// app.get("/api/products/:id", async (req,res)=>{
+//    try{
+//     const _id = req.params.id;
+//     console.log(_id);
+//     const productData = await product.findById(_id);
+//     //console.log(productData);
+//     if(!productData){
+//       return res.status(404).send();
+//     }else{
+//       res.send(productData);
+//     }
+//    }catch(error){
+//       res.send(error);
+//    }
+// });
 
 const start = async() => {
 try{

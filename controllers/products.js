@@ -1,12 +1,13 @@
 const product = require("../models/product");
+//const { search } = require("../routes/products");
 
 const getAllProducts = async (req, res) => {
-  const { author, name, featured, sort, select } = req.query;
+  const {id, author, name, featured, sort, select ,search} = req.query;
   const queryObj = {};
 
-  // if (id) {
-  //   queryObj.id = id;
-  // }
+  if (id) {
+    queryObj._id = id;
+  }
   if (author) {
     queryObj.author = author;
   }
@@ -18,16 +19,18 @@ const getAllProducts = async (req, res) => {
   }
 // use sort method
   let apiBook = product.find(queryObj);
-  if (sort){
+  
+   if (sort){
     let sortFix = sort.split(",").join(" ");
     apiBook = apiBook.sort(sortFix);
-  }
+  };
+  
   // use select searching method
   if (select){
     //let selectFix = select.replace(",", " ");
     let selectFix = select.split(",").join(" ");
     apiBook = apiBook.select(selectFix);
-  }
+  };
 
   // use pagination and limit
   let page = Number(req.query.page) || 1;
@@ -42,9 +45,8 @@ const getAllProducts = async (req, res) => {
 };
 
 const getAllProductsTesting = async (req, res) => {
-  const myBook = await product.find(req.query).sort("price");
-  //console.log(req.query);
+ const myBook = await product.find(req.query).sort("price");
+  console.log(req.query);
   res.status(200).json({ myBook });
 };
-
-module.exports = { getAllProducts, getAllProductsTesting };
+module.exports = { getAllProducts, getAllProductsTesting};
