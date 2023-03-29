@@ -24,6 +24,9 @@ const bookSchema = new mongoose.Schema({
   },
   price: {
     type: Number,
+  },
+  stock:{
+    type: Number,
   }
 });
 
