@@ -2,11 +2,14 @@ const product = require("../models/product");
 //const { search } = require("../routes/products");
 
 const getAllProducts = async (req, res) => {
-  const {id, author, name, featured, sort, select ,search} = req.query;
+  const {id, author, name, featured, sort, select ,search,stock} = req.query;
   const queryObj = {};
 
   if (id) {
     queryObj._id = id;
+  }
+  if (stock) {
+    queryObj.stock = stock;
   }
   if (author) {
     queryObj.author = author;
